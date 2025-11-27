@@ -182,7 +182,6 @@ docker compose down -v
 - **React 18+** con TypeScript - Biblioteca de interfaz de usuario
 - **Vite 7.2.4** - Build tool y dev server de última generación
 - **Bootstrap 5.3.8** - Framework CSS para diseño responsive
-- **Axios** - Cliente HTTP para llamadas API
 
 ---
 
