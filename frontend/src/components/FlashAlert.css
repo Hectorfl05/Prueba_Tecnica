@@ -1,0 +1,120 @@
+.flash-alert {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  min-width: 344px;
+  max-width: 500px;
+  padding: 0.875rem 1rem;
+  border-radius: 4px;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: slideIn 0.225s cubic-bezier(0, 0, 0.2, 1);
+  z-index: 1000;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%) translateY(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+.flash-alert-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.flash-alert-icon {
+  font-size: 1.25rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.flash-alert-message {
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: 0.25px;
+}
+
+.flash-alert-close {
+  background: none;
+  border: none;
+  font-size: 1.125rem;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.7;
+  padding: 0.25rem;
+  margin-left: 1rem;
+  transition: opacity 0.2s;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flash-alert-close:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Tipos de alerta */
+.flash-alert-success {
+  background-color: #0d652d;
+  color: #ffffff;
+}
+
+.flash-alert-success .flash-alert-icon {
+  color: #81c995;
+}
+
+.flash-alert-error {
+  background-color: #b3261e;
+  color: #ffffff;
+}
+
+.flash-alert-error .flash-alert-icon {
+  color: #f2b8b5;
+}
+
+.flash-alert-info {
+  background-color: #1a73e8;
+  color: #ffffff;
+}
+
+.flash-alert-info .flash-alert-icon {
+  color: #aecbfa;
+}
+
+.flash-alert-warning {
+  background-color: #ea8600;
+  color: #ffffff;
+}
+
+.flash-alert-warning .flash-alert-icon {
+  color: #fdd663;
+}
+
+/* Diseño Responsive */
+@media (max-width: 768px) {
+  .flash-alert {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    min-width: auto;
+  }
+}

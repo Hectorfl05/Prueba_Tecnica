@@ -1,0 +1,99 @@
+
+
+
+.card {
+  border: none !important;
+  border-radius: 8px !important;
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid #dadce0 !important;
+  border-radius: 4px !important;
+  padding: 12px 16px !important;
+  font-size: 14px !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #fff;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #1a73e8 !important;
+  box-shadow: 0 1px 6px rgba(26, 115, 232, 0.2) !important;
+  outline: none;
+}
+
+.form-control:hover:not(:focus),
+.form-select:hover:not(:focus) {
+  border-color: #5f6368 !important;
+}
+
+
+.form-label {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #5f6368 !important;
+  margin-bottom: 8px !important;
+}
+
+.btn-primary {
+  background: #1a73e8 !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 12px 24px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary:hover {
+  background: #1765cc !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+.btn-primary:disabled {
+  background: #e8eaed !important;
+  color: #80868b !important;
+  box-shadow: none !important;
+  transform: none;
+}
+
+/* Text helper estilo Material */
+.form-text {
+  font-size: 12px !important;
+  color: #5f6368 !important;
+  margin-top: 4px !important;
+}
+
+/* Card title */
+.card-title {
+  color: #202124 !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+}
+
+/* Ocultar flechas en input type="number" */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
