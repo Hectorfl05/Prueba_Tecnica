@@ -15,13 +15,20 @@ El proyecto incluye:
 
 ### 🟦 Backend (FastAPI)
 
-#### 1️⃣ Crear un entorno virtual (recomendado)
+
+#### 1️⃣ Acceder a la carpeta del backend
+
+```bash
+cd backend
+```
+
+#### 2️⃣ Crear un entorno virtual (recomendado)
 
 ```bash
 python -m venv venv
 ```
 
-#### 2️⃣ Activar el entorno virtual
+#### 3️⃣ Activar el entorno virtual
 
 **Windows (PowerShell):**
 
@@ -39,12 +46,6 @@ venv\Scripts\activate.bat
 
 ```bash
 source venv/bin/activate
-```
-
-#### 3️⃣ Acceder a la carpeta del backend
-
-```bash
-cd backend
 ```
 
 #### 4️⃣ Instalar dependencias
