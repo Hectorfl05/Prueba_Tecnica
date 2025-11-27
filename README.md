@@ -333,3 +333,4 @@ npm run lint
 - ✅ Este proyecto está diseñado para ejecutarse tanto de manera **local** como dentro de **contenedores Docker**.
 - ✅ La interfaz utiliza **Material Design** con Bootstrap 5 para una experiencia visual moderna.
 - ✅ El backend incluye **documentación interactiva** automática con Swagger UI.
+- 📝 Persistencia de Datos: Los datos generados durante las transacciones del backend se almacenan temporalmente en memoria dentro del archivo db.py. lo que significa que la información no es persistente y se perderá al reiniciar el servidor, tomarlo en cuenta en la realización de pruebas manuales.
