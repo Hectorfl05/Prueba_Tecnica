@@ -152,9 +152,13 @@ const TransactionForm = ({
               className="form-control"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              placeholder="Ej: Compra de supermercado"
+              placeholder="Ej: Venta de Inventario XYZ"
+              maxLength={100}
               disabled={loading}
             />
+            <small className="form-text text-primary d-block mt-2">
+              {description.length}/100 caracteres
+            </small>
           </div>
 
           <div className="mb-3">
@@ -171,8 +175,11 @@ const TransactionForm = ({
               disabled={loading}
               onWheel={(e) => e.currentTarget.blur()}
             />
-            <small className="form-text text-muted">
-              Usa números positivos para ingresos y negativos para gastos
+            <small
+              className="form-text text-primary fw-bold d-block mt-2 p-2 rounded"
+              style={{ backgroundColor: "#fff3cd" }}
+            >
+              💡 Usa números positivos para ingresos y negativos para gastos
             </small>
           </div>
 
