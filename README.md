@@ -15,7 +15,6 @@ El proyecto incluye:
 
 ### 🟦 Backend (FastAPI)
 
-
 #### 1️⃣ Acceder a la carpeta del backend
 
 ```bash
@@ -65,6 +64,20 @@ uvicorn main:app --reload
 - 👉 **API**: http://localhost:8000
 - 👉 **Documentación (Swagger)**: http://localhost:8000/docs
 - 👉 **Redoc**: http://localhost:8000/redoc
+
+#### 6️⃣ Ejecutar tests (Opcional)
+
+Para verificar que el backend funciona correctamente, puedes ejecutar los tests:
+
+```bash
+pytest test_main.py -v
+```
+
+O para ejecutar todos los tests con reporte de cobertura:
+
+```bash
+pytest --cov=. --cov-report=html
+```
 
 ---
 
@@ -176,6 +189,8 @@ docker compose down -v
 - **Python 3.11** - Lenguaje de programación
 - **Uvicorn** - Servidor ASGI de alto rendimiento
 - **Pydantic** - Validación de datos
+- **Pytest** - Framework de testing para Python
+- **httpx** - Cliente HTTP para tests
 
 ### Frontend
 
@@ -211,6 +226,7 @@ docker compose down -v
 Plantilla_Prueba_Tecnica/
 ├── backend/
 │   ├── main.py                 # Punto de entrada de la API
+│   ├── test_main.py           # Tests del backend
 │   ├── requirements.txt        # Dependencias de Python
 │   ├── Dockerfile             # Imagen Docker del backend
 │   ├── api/                   # Rutas de la API
@@ -283,6 +299,12 @@ uvicorn main:app --reload
 
 # Ejecutar en un puerto diferente
 uvicorn main:app --reload --port 8080
+
+# Ejecutar tests
+pytest test_main.py -v
+
+# Ejecutar tests con reporte de cobertura
+pytest --cov=. --cov-report=html
 ```
 
 ### Frontend Local
@@ -311,5 +333,3 @@ npm run lint
 - ✅ Este proyecto está diseñado para ejecutarse tanto de manera **local** como dentro de **contenedores Docker**.
 - ✅ La interfaz utiliza **Material Design** con Bootstrap 5 para una experiencia visual moderna.
 - ✅ El backend incluye **documentación interactiva** automática con Swagger UI.
-
-
